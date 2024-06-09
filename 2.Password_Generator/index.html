@@ -11,40 +11,39 @@
         <h3>Password Generator</h3>
         <div class="wrapper">
             <div class="input-box">
-        
-        <input type="text" id="password" disabled>
-        <span id="copy" onclick="copypassword()">Copy</span>
-        </div>
-        <div class="pass-setting">
-            <label class="tite">Password setting</label>
-            <ul class="option">
-                <li class="option">
-                    <input type="checkbox" id="lowercase" checked>
-                    <label for="lowercase">Lowercase(A-Z)</label>
-                </li>
-                <li class="option">
-                    <input type="checkbox" id="uppercase" >
-                    <label for="upper">Uppercase(A-Z)</label>
-                </li>
-                <li class="option">
-                    <input type="checkbox" id="number" checked>
-                    <label for="number">Number(0-10)</label>
-                </li>
-                <li class="option">
-                    <input type="checkbox" id="symbol" checked>
-                    <label for="symbol">Symbol(!-*)</label>
-                </li>
-                <li class="option">
-                    <input type="checkbox" id="exc-dublicate">
-                    <label for="exclude-dublicate">Exclude-dublicate</label>
-                </li>
-                <li class="option">
-                    <input type="checkbox" id="spaces">
-                    <label for="spaces">Include Spaces</label>
-                </li>
-            </ul>
-        </div>
-        <button class="gererator-btn" id="generate" onclick="generatePassword"> Generator Password</button>
+                <input type="text" id="password" disabled>
+                <span id="copy" onclick="copypassword()">Copy</span>
+            </div>
+            <div class="pass-setting">
+                <label class="title">Password Settings</label>
+                <ul class="options">
+                    <li class="option">
+                        <input type="checkbox" id="lowercase" checked>
+                        <label for="lowercase">Lowercase (a-z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="uppercase">
+                        <label for="uppercase">Uppercase (A-Z)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="number" checked>
+                        <label for="number">Numbers (0-9)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="symbol" checked>
+                        <label for="symbol">Symbols (!-*)</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="exclude-duplicate">
+                        <label for="exclude-duplicate">Exclude Duplicates</label>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="spaces">
+                        <label for="spaces">Include Spaces</label>
+                    </li>
+                </ul>
+            </div>
+            <button class="generator-btn" id="generate" onclick="generatePassword()">Generate Password</button>
         </div>
     </div>
     <script src="script.js"></script>
